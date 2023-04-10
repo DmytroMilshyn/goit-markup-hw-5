@@ -15,17 +15,18 @@
 <body>
     <header class="header">
         <div class="container flex">
-            <a class="logo" href="./index.html">Web<span class="logo-2">stuio</span></a>
-            <nav class="header-menu">
+            
+            <nav class="header-menu flex">
+                <a class="logo" href="./index.html">Web<span class="logo-2">stuio</span></a>
                 <ul class="header-list list flex">
-                    <li class="header-item"><a class="header-link" href="#">Studio</a></li>
+                    <li class="header-item"><a class="header-link current-blank" href="./index.html">Studio</a></li>
                     <li class="header-item"><a class="header-link" href="./portfolio.html">Portfolio</a></li>
                     <li class="header-item"><a class="header-link" href="#">Contacts</a></li>
                 </ul>
             </nav>
             <ul class="list flex header-list-link">
                 <li class="header-item"><a class="header-link-contant" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header-item"><a class="header-link-contact" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li class="header-item"><a class="header-link-contant" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </div>
     </header>
@@ -33,7 +34,7 @@
     <Section class="hero">
         <div class="container hero-banner">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="btn" type="button">Order Service</button>
+                <button class="btn modal-btn" type="button" data-modal-open>Order Service</button>
         </div>
     </Section>
     <Section class="about">
@@ -330,6 +331,32 @@
         </div>
     </div>
 </footer>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-btn-icon">
+            <use href="./images/symbol-defs.svg#icon-close-modal-btn"></use>
+            </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+    <form>
+        <input class="modal-input" type="text" name="user-name" />
+        <input class="modal-input" type="tel" name="user-phone" />
+        <input class="modal-input" type="email" name="user-email" />
+        <textarea
+            class="modal-t-area"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Text input">
+        </textarea>
+        <button class="modal-form-btn" type="submit">Send</button>
+    </form>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 
 </body>
 </html> 
