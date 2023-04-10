@@ -184,6 +184,10 @@ transition: color var(--transition-dur-func);
 .header-item {
     position: relative;
 }
+
+.current-blank {
+    color: var(--ocean-color);
+}
 .current-blank::after {
     content: '';
     display: block;
