@@ -444,9 +444,8 @@ display: flex;
 
 .customers-logo:hover,
 .customers-logo:focus {
-    fill: var(--accent-text-color);
+    fill: var(--ocean-color);
 }
-
 /*!------------------------------------------------- footer  */
 
 footer {
@@ -514,7 +513,7 @@ font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-transition: border-radius var(--transition-dur-func), background var(--transition-dur-func), box-shadow var(--transition-dur-func), color var(--transition-dur-func);
+transition: border-color var(--transition-dur-func), background var(--transition-dur-func), box-shadow var(--transition-dur-func), color var(--transition-dur-func);
 
 }
 
@@ -582,8 +581,8 @@ row-gap: 48px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    background-color: #4D5AE5;
-    padding: 40px 32px 164px 32px;
+    background-color: var(--accent-text-color);
+    padding: 40px 32px 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -628,9 +627,11 @@ row-gap: 48px;
     transform: translate(-50%, -50%) scalex(1);
     width: 408px;
     min-height: 576px;
+    opacity: 1;
     background-color: #FCFCFC;
     transition: transform var(--transition-dur-func);
-    padding: 24px;
+    padding: 72px 24px 24px;
+    border-radius: 4px;
 }
 
 .backdrop.is-hidden .modal-window {
@@ -654,7 +655,7 @@ row-gap: 48px;
 }
 
 .modal-close-btn:is(:hover, :focus) {
-    background-color: var(--accent-color);
+    background-color: var(--ocean-color);
     border-radius: 4px;
     border-radius: 50%;
 }
